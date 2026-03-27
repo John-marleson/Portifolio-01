@@ -1,21 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John marleson</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Profissional - John Marleson</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #fff;
+            --hover-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* CABEÇALHO / PERFIL */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* REDES SOCIAIS */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* SEÇÕES PRINCIPAIS */
+        section {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        /* LISTA DE PROJETOS */
+        .project-list {
+            list-style: none;
+        }
+
+        .project-item {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .project-item:hover {
+            background-color: var(--hover-color);
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .project-title:hover {
+            text-decoration: underline;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .tech-tags {
+            margin-top: 8px;
+            font-size: 0.8rem;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            color: #555;
+        }
+
+        /* RODAPÉ */
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 30px;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <div class="Pricipal">
-            <img src="imagens/Gemini_Generated_Image_8mlhg78mlhg78mlh.png" alt="FotoDePerfil" width="250px">
-            <h1 class="nome">John Marleson De Sousa Porfirio</h1>
-            <p>Estudante de Desenvolvimento Full Strack / Analise e Desenvolvimento de sistemas</p>
-            <a href="https://github.com/John-marleson" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/john-marleson-171110349/" target="_blank">Linkedin</a>
-            <a href="https://w.app/contatojohnmarleson" target="_blank">contato</a>
-        </div>
-    </main>
+
+    <div class="container">
+        
+        <header>
+            <img src="imagens/WhatsApp Image 2026-03-27 at 14.40.10.jpeg" alt="Foto de John Marleson" class="profile-img">
+            <h1>John Marleson</h1>
+            <p>Estudante de ADS | Desenvolvedor Full Stack</p>
+            
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/john-marleson/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/John-marleson" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+                </ul>
+        </header>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Atualmente estudante de Análise e Desenvolvimento de Sistemas (ADS). Atuo como desenvolvedor freelancer Full Stack, criando sites e aplicações personalizadas, além de possuir experiência com suporte técnico.</p>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <ul class="project-list">
+                
+                <li class="project-item">
+                    <a href="COLOCAR_URL_DO_REPOSITORIO" target="_blank" class="project-title">Nome do Seu Projeto Principal</a>
+                    <p class="project-desc">Breve descrição do que o projeto faz e qual problema ele resolve.</p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <a href="#" class="project-title">Outro Projeto Legal</a>
+                    <p class="project-desc">Uma breve descrição de outro projeto freelancer ou pessoal.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 John Marleson. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
